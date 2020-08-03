@@ -1,0 +1,74 @@
+.common-footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #302e2e;
+    height: 140px;
+    overflow: hidden;
+}
+
+.footer-wrap {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-wrap .r-code {
+    float: right;
+}
+
+.footer-wrap .r-code img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-wrap .concat {
+    margin-top: 20px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    color: #999;
+}
+
+.footer-wrap .concat img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.footer-wrap .concat span {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.footer-wrap .concat .tel-text {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-wrap .concat .tel {
+    font-size: 18px;
+    color: #fc002d;
+}
+
+.footer-wrap .copy {
+    margin-top: 10px;
+    line-height: 18px;
+    color: #999;
+    display: block;
+    overflow: hidden;
+}
+
+.footer-wrap .copy span {
+    float: left;
+    margin-right: 15px;
+}
+
+.footer-wrap span {
+    font-size: 12px;
+}

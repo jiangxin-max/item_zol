@@ -1,0 +1,192 @@
+.login-title {
+    float: left;
+    position: relative;
+    color: #3e3a39;
+    font-size: 16px;
+    margin-top: 33px;
+    height: 30px;
+    line-height: 30px;
+    border-left: 1px solid #ededed;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+
+
+/* ------------------------------- */
+
+
+/* registry */
+
+.post {
+    width: 980px;
+    min-height: 0;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 140px;
+}
+
+.post-progress {
+    width: 980px;
+    height: 35px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAjCAMAAABCdbKKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNGM5MDRkMy02MjM2LTBkNGQtYWM5NS0xNDVjNjdlMjAyYTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEQ0Qzc5ODQ4MTdDMTFFQTk0RjhGNzg2MENGMEU0RDUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEQ0Qzc5ODM4MTdDMTFFQTk0RjhGNzg2MENGMEU0RDUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0ODc3NDIzYS05ZmY2LTRhNTUtODQwYS0zZjFjOGJlYjFiODMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpjNzA0OWQ2Ny1iNjhjLWRjNDktYjRhOS0zNGJlZmJhMjJmN2IiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6ux9pFAAAAq1BMVEXd3d38AC3+/v7y8vL7+/v9T27s7Oz9Xnr/2eDm5ub8CTTj4+Pg4ODu7u7////f39/09PTw8PD8BjLi4uLe3t7h4eH4+Pj29vb+kqX8Ai//8/X9ZYD/+/z+xtDo6Oj9fJP9dI38AS78/Pz/5+v+qbj/6Oz+vcn9Mlb8Ejz8IUj8HUX8Ez3+v8rl5eX/5er9R2f+0dn9SGj/4eb8H0fk5OT9MVX+1Nz+qLf////oluxYAAAAOXRSTlP//////////////////////////////////////////////////////////////////////////wA6rGVAAAABMklEQVR42uzdB1ICQRRFURRMmDBgxoABE+a0/5VZ/VdBPc5Zw7vVNTChs0C40V/z1WFuGH26pYp6YOqiJsXxaot6a8/WRU2K0zqqu7YualL0r1vUixvGLmpSXNRRvWnsoibF/UmLerxt7aImxVEd1cvWLmpSfJ61qHv75i5qUvzWUX1u7qImxXdFfWDuoibGXVW9Zu+iJsVrRX1o76ImxdVbVb1u8KImxYp7RUVNlt2Puld0aPGiJsVlHdU7Fi9qUjxW1D2LFzVOakTNTF5Tv7imFjV+/UbUzO7/1D/+pxY1Ud7dUSZqsjy791vURJl4SkvUZLnxPLWoifLgzSeiJot3lImaLE/eJipqsnjvt6jJ0r/1hQ5RE8W3tERNFl+9FDVhfJ9a1IQZVdRTU58b/wIMAM3+btWo5FYjAAAAAElFTkSuQmCC);
+    background-size: 100% 100%;
+}
+
+.post-account {
+    width: 490px;
+    height: 35px;
+    float: left;
+    text-indent: 40px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.post-account,
+.post-company {
+    width: 490px;
+    height: 35px;
+    float: left;
+    text-indent: 40px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.account-con {
+    width: 635px;
+    min-height: 0;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.account-info {
+    width: 100%;
+    min-height: 40px;
+    font-size: 0;
+    margin-top: 30px;
+    position: relative;
+}
+
+.account-info>div {
+    margin-top: 0;
+}
+
+.account-modify {
+    width: 550px;
+    height: 38px;
+    background-color: #ddd;
+    border-radius: 2px;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    line-height: 38px;
+    margin-top: 40px;
+    margin-left: 85px;
+    cursor: pointer;
+    position: relative;
+}
+
+.account-login {
+    width: 100%;
+    line-height: 12px;
+    font-size: 12px;
+    color: #005aa0;
+    margin-top: 16px;
+    text-align: right;
+}
+
+.account-login a {
+    text-decoration: none;
+    color: #005aa0;
+    font-size: 12px;
+}
+
+.companyTipsCon {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.account-name {
+    width: 85px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+}
+
+.account-name span {
+    width: 72px;
+    display: inline-block;
+    text-align: right;
+}
+
+.account-input {
+    width: 548px;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+    font-size: 14px;
+    text-indent: 20px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.account-info .account-input:focus {
+    outline-style: none;
+    border-color: red;
+}
+
+.account-info>p {
+    width: 140px;
+    line-height: 25px;
+    color: #fc002d;
+    font-size: 12px;
+    position: absolute;
+    left: 655px;
+    top: 10px;
+}
+
+.account-info>p img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.account-note {
+    width: 348px;
+}
+
+.account-node-btn {
+    width: 190px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fc002d;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+}
