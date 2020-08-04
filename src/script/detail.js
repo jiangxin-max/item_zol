@@ -135,4 +135,57 @@
 
     /* -------------------------------------购物车----------------------------------- */
 
+    /* 添加购物车，将数据存入cookie */
+    /* 获取cookie数据 */
+    var shopSid = [];
+    var shopNum = [];
+
+    function obtainCookie() {
+        if ($.cookie('goodsSid') && $.cookie('goodsNum')) { //cookie已有数据
+            /* 取出cookie数据放入数组 */
+            shopSid = $.cookie('goodsSid').split(',');
+            shopNum = $.cookie('goodsNum').split(',');
+        } else { //cookie里面没有数据
+            shopSid = [];
+            shopNum = [];
+        }
+    }
+
+    /* 点击加入'加入购物车'按钮 */
+    $('.wares-btn p').on('click', function() {
+        obtainCookie(); //获取一次cookie数据
+        if (shopSid.indexOf(sid) == -1) {
+            /* sid不存在，代表数据不存在，表示商品第一次添加 */
+            shopSid.push(sid);
+            shopNum.push($('#btn-price').html());
+            $.cookie('goodsSid', shopSid.toString(), 3);
+            $.cookie('goodsNum', shopNum.toString(), 3);
+        } else {
+            var num = shopSid.indexOf(sid);
+            shopNum[num] = parseInt(shopNum[num]) + parseInt($('#btn-price').html());
+            $.cookie('goodsNum', shopNum.toString(), 3);
+        }
+    })
+
+    /* 点击加减号加减数量 */
+    $('#left-btn').on('click', function() {
+        let prices = Number($('#btn-price').html());
+        prices -= 1;
+        if (prices <= 0) {
+            prices = 0;
+        }
+        $('#btn-price').html(prices);
+    })
+    $('#right-btn').on('click', function() {
+        let prices = Number($('#btn-price').html());
+        prices += 1;
+        $('#btn-price').html(prices);
+    })
+
+    /* 点击加入购物车还会直接跳转到购物车页面 */
+    $('.wares-btn p').on('click', function() {
+        alert('添加成功!');
+        location.href = 'shoppingCart.html';
+    })
+
 }();

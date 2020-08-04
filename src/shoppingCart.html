@@ -29,9 +29,9 @@
             </div>
             <!-- navigation right -->
             <div class="wrap_right">
-                <a href="http://" target="_blank" rel="noopener noreferrer">登录</a>
+                <a href="login.html" target="_blank" rel="noopener noreferrer">登录</a>
                 <span class="bar">|</span>
-                <a href="http://" target="_blank" rel="noopener noreferrer">注册</a>
+                <a href="registry.html" target="_blank" rel="noopener noreferrer">注册</a>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
     <div class="cart-box">
         <h1>
             全部商品
-            <span>1</span>
+            <span id="all">0</span>
         </h1>
         <div class="cart-box-content">
             <div class="cart-box-title">
@@ -82,18 +82,7 @@
                 <span class="cart-pro-operation">操作</span>
             </div>
             <div class="cart-box-pro-box">
-                <div class="c-b-proImg">
-                    <img src="https://mercrt-fd.zol-img.com.cn/t_s400x400/g4/M03/00/0D/Cg-4WlHRS0yIfdoaAAIkAUjvtRgAAKCmQDCTQoAAiQZ034.jpg" alt="">
-                </div>
-                <span class="c-b-goodsName">微软Surface Pro(64GB/中文版)</span>
-                <span class="c-b-price">5200.00</span>
-                <div class="c-b-proCount">
-                    <span class="reduce">-</span>
-                    <span class="c-b-proCount-input">1</span>
-                    <span class="plus">+</span>
-                </div>
-                <span class="c-b-priceCount">5200.00</span>
-                <span class="c-b-operation">删除</span>
+
             </div>
         </div>
     </div>
@@ -106,16 +95,16 @@
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAnElEQVQokeXSvQkCQRDF8d+dmogKdqAF2IJYgbmpmdiIlmIk2IFdGIgNmAgaHiqHe7DcB5r7YNg3s+8PE0ySmWjQBS2M8CpH2ujjXsOOw1uBMEixCZ/lEoFxnbHKwXUIJFHNIj8PKxf9Cdu0ssRH+8gf8CwHmsCm+e+BJv0zGF/SsS6Qn1yhDnqhmWIY/CLyD2QxuMMN3S8bXrGEN+0wHGA5sFkaAAAAAElFTkSuQmCC"
                         alt="">
                 </div>
-                <span> 清空购物车</span>
+                <span id="clean"> 清空购物车</span>
             </div>
             <div class="c-s-box-right">
                 <span class="c-s-box-r-preCount">
                     已选择
-                    <span>1</span> 件商品
+                    <span id="goods-num">0</span> 件商品
                 </span>
                 <span class="c-s-box-r-priceCount">
                     合计（不含运费）：
-                    <span>￥5200.00</span>
+                    <span id="total-price">￥00.00</span>
                 </span>
                 <span class="c-s-box-r-submit">去结算</span>
             </div>
@@ -148,6 +137,11 @@
             </div>
         </div>
     </div>
+
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="script/shoppingCart.js"></script>
 </body>
 
 </html>
