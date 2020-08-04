@@ -30,7 +30,7 @@
             $.each(data, function(index, value) {
                 if (value.sid == sid) {
                     str += `
-                    <div id="c-b">
+                    <div id="c-b" sid="${sid}">
                     <div class="c-b-proImg">
                     <img src="${value.url}" alt="">
                     </div>
@@ -77,8 +77,93 @@
     })
 
     /* -----------------------------物品数量的加减------------------------------------ */
-    $cart.on('click', function() {
 
+    $cart.on('click', function(e) {
+        if ($(e.target).is('span.reduce')) { //数量减操作
+            let num = Number($(e.target).siblings().eq(0).html());
+            num -= 1;
+            if (num <= 0) {
+                num = 0;
+            }
+            $(e.target).siblings().eq(0).html(num);
+
+            /* 数量减少，后面的价钱也同步改变 */
+            let count = (num * Number($(e.target).parent().siblings('span.c-b-price').html())).toFixed(2);
+            $(e.target).parent().siblings('span.c-b-priceCount').html(count);
+
+            /* 所有商品的总价的价钱也同步改变 */
+            let alls = 0;
+            $(e.target).parent().parent().siblings().each(function(index, value) {
+                alls += Number($(value).find('span.c-b-priceCount').html())
+            })
+            let total = alls + Number(count)
+            $('#total-price').html('￥' + total);
+
+            /* 下面的商品总计减一 */
+            let goods_num = Number($('#goods-num').html());
+            goods_num--;
+            if (goods_num <= 0) {
+                goods_num = 0;
+            }
+            $('#goods-num').html(goods_num);
+
+        } else if ($(e.target).is('span.plus')) { //数量加操作
+            let num = Number($(e.target).siblings().eq(1).html());
+            num += 1;
+            $(e.target).siblings().eq(1).html(num);
+
+            /* 数量增加，后面的价钱改变 */
+            let count = (num * Number($(e.target).parent().siblings('span.c-b-price').html())).toFixed(2);
+            $(e.target).parent().siblings('span.c-b-priceCount').html(count);
+
+            /* 所有商品的总价的价钱也同步改变 */
+            let alls = 0;
+            $(e.target).parent().parent().siblings().each(function(index, value) {
+                alls += Number($(value).find('span.c-b-priceCount').html())
+            })
+            let total = alls + Number(count)
+            $('#total-price').html('￥' + total);
+
+            /* 下面的商品总计加一 */
+            let goods_num = Number($('#goods-num').html());
+            goods_num++;
+            $('#goods-num').html(goods_num);
+        }
+    })
+
+    /* 点击删除按钮，删除当前数据 */
+    $cart.on('click', function(e) {
+        if ($(e.target).is('span#delete')) {
+            /* 还要对商品总价做改变 */
+            let alls = 0;
+            $(e.target).parent().siblings().each(function(index, value) {
+                alls += Number($(value).find('span.c-b-priceCount').html())
+            })
+            $('#total-price').html('￥' + alls);
+
+            /* 全部商品的总数少一 */
+            let num = Number($('#all').html());
+            num--;
+            $('#all').html(num);
+
+            /* 从cookie中删除该商品对应的数据 */
+            shopSid = $.cookie('goodsSid').split(',');
+            shopNum = $.cookie('goodsNum').split(',');
+            let $sid = $(e.target).parent().attr('sid')
+            if (shopSid.indexOf($sid) != -1) {
+                let id = shopSid.indexOf($sid)
+                shopSid.splice(id, 1);
+                shopNum.splice(id, 1);
+                $.cookie('goodsSid', shopSid.toString(), 3);
+                $.cookie('goodsNum', shopNum.toString(), 3);
+            }
+
+            /* 然后删除该商品 */
+            $(e.target).parent().remove();
+
+
+
+        }
     })
 
 }();
