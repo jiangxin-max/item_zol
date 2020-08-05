@@ -72,11 +72,13 @@
             $confirm.siblings('p').show();
             $confirm.siblings('p').find('span').text('两次密码不一致');
             confirm_pass = true;
+        } else {
+            $confirm.siblings('p').hide();
         }
     })
 
     $confirm.on('change', function() {
-        /* 手机号码不为空,验证码不为空，密码和验证密码均不为空，提交按钮变色 */
+        /* 手机号码不为空,验证码不为空，密码均不为空，提交按钮变色 */
         if (user_tel.val() && password.val() && ver_code.val()) {
             $(".account-modify").css({ 'background-color': '#fc002d', 'color': '#fff' });
         }

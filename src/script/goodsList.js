@@ -213,13 +213,17 @@
     })
 
     /* -------------------------------------商品列表栏添加样式----------------------------------------- */
-    $oUl.hover(function() {
-        $oUl.find('li').hover(function() {
-            $(this).css({ 'box-shadow': '3px 3px 3px 3px #ccc' })
-            $(this).find('img').css('width', '105%')
-        }, function() {
-            $(this).css({ 'box-shadow': 'none' })
-            $(this).find('img').css('width', '100%')
-        })
+    $oUl.on('mouseover', function(e) {
+        if ($(e.target).is('li')) {
+            $(e.target).on('mouseover', function() {
+                $(e.target).css({ 'box-shadow': '3px 3px 3px 3px #ccc' });
+                $(e.target).find('a').css({ transform: 'scale(1.1,1.1)', transition: '0.5s' })
+            })
+            $(e.target).on('mouseout', function() {
+                $(e.target).css({ 'box-shadow': 'none' })
+                $(e.target).find('a').css({ transform: 'scale(1,1)' })
+            })
+        }
     })
+
 }(jQuery);

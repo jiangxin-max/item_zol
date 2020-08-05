@@ -172,7 +172,7 @@
         let prices = Number($('#btn-price').html());
         prices -= 1;
         if (prices <= 0) {
-            prices = 0;
+            prices = 1; //商品数量不允许减为零
         }
         $('#btn-price').html(prices);
     })
