@@ -72,8 +72,8 @@
         $('#all').html(0);
 
         /* cookie所有数据清零 */
-        $.cookie('goodsSid', '', -1);
-        $.cookie('goodsNum', '', -1);
+        $.cookie('goodsSid', '', { expires: -1, path: '/' });
+        $.cookie('goodsNum', '', { expires: -1, path: '/' });
     })
 
     /* -----------------------------物品数量的加减------------------------------------ */
@@ -154,8 +154,8 @@
                 let id = shopSid.indexOf($sid)
                 shopSid.splice(id, 1);
                 shopNum.splice(id, 1);
-                $.cookie('goodsSid', shopSid.toString(), 3);
-                $.cookie('goodsNum', shopNum.toString(), 3);
+                $.cookie('goodsSid', shopSid.toString(), { expires: 3, path: '/' });
+                $.cookie('goodsNum', shopNum.toString(), { expires: 3, path: '/' });
             }
 
             /* 然后删除该商品 */

@@ -158,12 +158,12 @@
             /* sid不存在，代表数据不存在，表示商品第一次添加 */
             shopSid.push(sid);
             shopNum.push($('#btn-price').html());
-            $.cookie('goodsSid', shopSid.toString(), 3);
-            $.cookie('goodsNum', shopNum.toString(), 3);
+            $.cookie('goodsSid', shopSid.toString(), { expires: 3, path: '/' });
+            $.cookie('goodsNum', shopNum.toString(), { expires: 3, path: '/' });
         } else {
             var num = shopSid.indexOf(sid);
             shopNum[num] = parseInt(shopNum[num]) + parseInt($('#btn-price').html());
-            $.cookie('goodsNum', shopNum.toString(), 3);
+            $.cookie('goodsNum', shopNum.toString(), { expires: 3, path: '/' });
         }
     })
 
