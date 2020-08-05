@@ -57,16 +57,17 @@
         </div>
 
         <div>
-            <form action="">
+            <form action="http://localhost/2004/Item_zol/php/registry.php" method="POST" class="form1">
                 <div class="account-con">
                     <div class="account-info">
                         <div class="account-name">
                             <span>手机号码：</span>
                         </div>
-                        <input type="tel" placeholder="请输入手机号" class="account-input">
+                        <input type="tel" placeholder="请输入手机号" class="account-input tel" name="tel">
                         <p style="display: none;">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNGM5MDRkMy02MjM2LTBkNGQtYWM5NS0xNDVjNjdlMjAyYTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODBFM0Y5Njk4N0E3MTFFQUE3RDhENzU3RDIzN0ZCMkQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODBFM0Y5Njg4N0E3MTFFQUE3RDhENzU3RDIzN0ZCMkQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpiZDkyMjFlZS00Mzc2LTQ2YzQtYmU3Mi0zZTk2MmY0ODc3NGYiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpjNzA0OWQ2Ny1iNjhjLWRjNDktYjRhOS0zNGJlZmJhMjJmN2IiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7ucUtGAAABKklEQVR42mL8w6DLgAa0gDgFiD2BWBEqdg+IdwDxHCC+hqyYEckANiDuA+JMIGZiwA7+AfFsIC4E4u/IBoA0bwViFwbiwD6oC3/BbOrHppn5/yUG5u+nsRngBHUt2AXaQPoiSD2GAR+PMTB8+8HwV9IJmyF/gVifCRpgzFgd+h+I33/C5Q2QnhSQAR44ffrlG8N/3AaAgAfIACWc0n//4nMBCCix4JP9f+YqA8P1+/iU/AIF4nUgQwOrtKggA8OPXwwMn7/iMuAqEzSFYQIxIQbm5/sZmE8uxeeCPSAD5kKjBBUAbf5//R4Y4wohUNKGpcSpQJzFQBqYBsTZVEvKwJBi8Ia65B8ejSC5mUDsA9WDkhthAJS0U6EJTAmq8AEowKDZ+QqyYoAAAwAtI1gN9QvvIwAAAABJRU5ErkJggg=="
                                 alt="">
+                            <span></span>
                         </p>
                     </div>
 
@@ -74,11 +75,12 @@
                         <div class="account-name">
                             <span>短信验证：</span>
                         </div>
-                        <input type="text" placeholder="请输入短信验证码" class="account-input account-note">
+                        <input type="text" placeholder="请输入短信验证码" class="account-input account-note ver-code">
                         <input type="button" value="获取验证码" class="account-node-btn">
                         <p style="display: none;">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNGM5MDRkMy02MjM2LTBkNGQtYWM5NS0xNDVjNjdlMjAyYTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODBFM0Y5Njk4N0E3MTFFQUE3RDhENzU3RDIzN0ZCMkQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODBFM0Y5Njg4N0E3MTFFQUE3RDhENzU3RDIzN0ZCMkQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpiZDkyMjFlZS00Mzc2LTQ2YzQtYmU3Mi0zZTk2MmY0ODc3NGYiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpjNzA0OWQ2Ny1iNjhjLWRjNDktYjRhOS0zNGJlZmJhMjJmN2IiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7ucUtGAAABKklEQVR42mL8w6DLgAa0gDgFiD2BWBEqdg+IdwDxHCC+hqyYEckANiDuA+JMIGZiwA7+AfFsIC4E4u/IBoA0bwViFwbiwD6oC3/BbOrHppn5/yUG5u+nsRngBHUt2AXaQPoiSD2GAR+PMTB8+8HwV9IJmyF/gVifCRpgzFgd+h+I33/C5Q2QnhSQAR44ffrlG8N/3AaAgAfIACWc0n//4nMBCCix4JP9f+YqA8P1+/iU/AIF4nUgQwOrtKggA8OPXwwMn7/iMuAqEzSFYQIxIQbm5/sZmE8uxeeCPSAD5kKjBBUAbf5//R4Y4wohUNKGpcSpQJzFQBqYBsTZVEvKwJBi8Ia65B8ejSC5mUDsA9WDkhthAJS0U6EJTAmq8AEowKDZ+QqyYoAAAwAtI1gN9QvvIwAAAABJRU5ErkJggg=="
                                 alt="">
+                            <span></span>
                         </p>
                     </div>
 
@@ -86,10 +88,11 @@
                         <div class="account-name">
                             <span>登录密码：</span>
                         </div>
-                        <input type="password" placeholder="请输入密码" class="account-input">
+                        <input type="password" placeholder="请输入密码" class="account-input password" name="password">
                         <p style="display: none;">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNGM5MDRkMy02MjM2LTBkNGQtYWM5NS0xNDVjNjdlMjAyYTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODBFM0Y5Njk4N0E3MTFFQUE3RDhENzU3RDIzN0ZCMkQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODBFM0Y5Njg4N0E3MTFFQUE3RDhENzU3RDIzN0ZCMkQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpiZDkyMjFlZS00Mzc2LTQ2YzQtYmU3Mi0zZTk2MmY0ODc3NGYiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpjNzA0OWQ2Ny1iNjhjLWRjNDktYjRhOS0zNGJlZmJhMjJmN2IiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7ucUtGAAABKklEQVR42mL8w6DLgAa0gDgFiD2BWBEqdg+IdwDxHCC+hqyYEckANiDuA+JMIGZiwA7+AfFsIC4E4u/IBoA0bwViFwbiwD6oC3/BbOrHppn5/yUG5u+nsRngBHUt2AXaQPoiSD2GAR+PMTB8+8HwV9IJmyF/gVifCRpgzFgd+h+I33/C5Q2QnhSQAR44ffrlG8N/3AaAgAfIACWc0n//4nMBCCix4JP9f+YqA8P1+/iU/AIF4nUgQwOrtKggA8OPXwwMn7/iMuAqEzSFYQIxIQbm5/sZmE8uxeeCPSAD5kKjBBUAbf5//R4Y4wohUNKGpcSpQJzFQBqYBsTZVEvKwJBi8Ia65B8ejSC5mUDsA9WDkhthAJS0U6EJTAmq8AEowKDZ+QqyYoAAAwAtI1gN9QvvIwAAAABJRU5ErkJggg=="
                                 alt="">
+                            <span></span>
                         </p>
                     </div>
 
@@ -97,17 +100,18 @@
                         <div class="account-name">
                             <span>确认密码：</span>
                         </div>
-                        <input type="password" disabled="disabled" placeholder="确认密码" class="account-input">
+                        <input type="password" disabled="disabled" placeholder="确认密码" class="account-input password-confirm">
                         <p style="display: none;">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNGM5MDRkMy02MjM2LTBkNGQtYWM5NS0xNDVjNjdlMjAyYTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODBFM0Y5Njk4N0E3MTFFQUE3RDhENzU3RDIzN0ZCMkQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODBFM0Y5Njg4N0E3MTFFQUE3RDhENzU3RDIzN0ZCMkQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpiZDkyMjFlZS00Mzc2LTQ2YzQtYmU3Mi0zZTk2MmY0ODc3NGYiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpjNzA0OWQ2Ny1iNjhjLWRjNDktYjRhOS0zNGJlZmJhMjJmN2IiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7ucUtGAAABKklEQVR42mL8w6DLgAa0gDgFiD2BWBEqdg+IdwDxHCC+hqyYEckANiDuA+JMIGZiwA7+AfFsIC4E4u/IBoA0bwViFwbiwD6oC3/BbOrHppn5/yUG5u+nsRngBHUt2AXaQPoiSD2GAR+PMTB8+8HwV9IJmyF/gVifCRpgzFgd+h+I33/C5Q2QnhSQAR44ffrlG8N/3AaAgAfIACWc0n//4nMBCCix4JP9f+YqA8P1+/iU/AIF4nUgQwOrtKggA8OPXwwMn7/iMuAqEzSFYQIxIQbm5/sZmE8uxeeCPSAD5kKjBBUAbf5//R4Y4wohUNKGpcSpQJzFQBqYBsTZVEvKwJBi8Ia65B8ejSC5mUDsA9WDkhthAJS0U6EJTAmq8AEowKDZ+QqyYoAAAwAtI1gN9QvvIwAAAABJRU5ErkJggg=="
                                 alt="">
+                            <span></span>
                         </p>
                     </div>
+                    <input type="submit" value="提交" name="submit" class="account-modify">
 
-                    <div class="account-modify">提交</div>
                     <div class="account-login">
                         <span>
-                            <a  href="login.html" class="">已有账号登录</a>
+                            <a  href="login.html" target="_blank">已有账号登录</a>
                         </span>
                     </div>
                 </div>
@@ -141,6 +145,9 @@
             </div>
         </div>
     </div>
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script/registry.js"></script>
 </body>
 
 </html>

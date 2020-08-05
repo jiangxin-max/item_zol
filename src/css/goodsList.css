@@ -367,6 +367,12 @@
     text-align: center;
 }
 
+.normal-page input {
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 30px;
+}
+
 .normal-page a {
     display: inline-block;
     vertical-align: top;

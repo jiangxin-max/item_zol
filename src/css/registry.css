@@ -161,7 +161,7 @@
     font-size: 12px;
     position: absolute;
     left: 655px;
-    top: 10px;
+    top: 0px;
 }
 
 .account-info>p img {
@@ -189,4 +189,8 @@
     margin-left: 10px;
     cursor: pointer;
     user-select: none;
+}
+
+.account-modify:focus {
+    outline-style: none;
 }

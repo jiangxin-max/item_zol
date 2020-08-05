@@ -72,8 +72,8 @@
         $('#all').html(0);
 
         /* cookie所有数据清零 */
-        $.cookie('goodsSid', null, -1);
-        $.cookie('goodsNum', null, -1);
+        $.cookie('goodsSid', '', -1);
+        $.cookie('goodsNum', '', -1);
     })
 
     /* -----------------------------物品数量的加减------------------------------------ */
@@ -141,16 +141,16 @@
             })
             $('#total-price').html('￥' + alls);
 
-            /* 全部商品的总数少一 */
+            /* 全部商品的总数减一 */
             let num = Number($('#all').html());
             num--;
             $('#all').html(num);
 
             /* 从cookie中删除该商品对应的数据 */
-            shopSid = $.cookie('goodsSid').split(',');
+            shopSid = $.cookie('goodsSid').split(','); //将cookie的数据取出来
             shopNum = $.cookie('goodsNum').split(',');
-            let $sid = $(e.target).parent().attr('sid')
-            if (shopSid.indexOf($sid) != -1) {
+            let $sid = $(e.target).parent().attr('sid'); //获取要删除的数据的id
+            if (shopSid.indexOf($sid) != -1) { //找到这个id在数组中的位置，删除它，然后将改变后的数组重新放回cookie
                 let id = shopSid.indexOf($sid)
                 shopSid.splice(id, 1);
                 shopNum.splice(id, 1);
@@ -160,9 +160,6 @@
 
             /* 然后删除该商品 */
             $(e.target).parent().remove();
-
-
-
         }
     })
 
