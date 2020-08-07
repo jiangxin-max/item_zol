@@ -21,5 +21,5 @@ if(isset($_POST['submit'])){
     $tel = $_POST['tel'];
     $password = sha1($_POST['password']);
     $connect -> query("INSERT form1 VALUES(null,'$tel','$password')");
-    header('location:http://localhost/2004/Item_zol/src/login.html');
+    header('location:http://10.31.163.30/2004/Item_zol/src/login.html');
 }

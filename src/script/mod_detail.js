@@ -8,7 +8,7 @@ define([
             /* 获取地址栏id */
             var sid = location.search.substring(1).split('=')[1];
             $.ajax({
-                url: 'http://localhost/2004/Item_zol/php/getsid.php',
+                url: 'http://10.31.163.30/2004/Item_zol/php/getsid.php',
                 dataType: 'json',
                 data: {
                     sid: sid

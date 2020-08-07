@@ -1,7 +1,7 @@
 {
   "name": "item_zol",
   "version": "1.0.0",
-  "description": "",
+  "description": "项目1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,8 +14,16 @@
     "gulp-babel": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-imagemin": "^7.1.0",
-    "gulp-minify-html": "^1.0.6",
     "gulp-uglify": "^3.0.2",
-    "gulp-watch": "^5.0.1"
-  }
+    "gulp-watch": "^5.0.1",
+    "gulp-minify-html": "^1.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangxin-max/item_zol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jiangxin-max/item_zol/issues"
+  },
+  "homepage": "https://github.com/jiangxin-max/item_zol#readme"
 }

@@ -26,7 +26,7 @@ define([
 
             function render(sid, num) {
                 $.ajax({
-                    url: 'http://localhost/2004/Item_zol/php/interface-list.php',
+                    url: 'http://10.31.163.30/2004/Item_zol/php/interface-list.php',
                     dataType: 'json'
                 }).done(function(data) {
 

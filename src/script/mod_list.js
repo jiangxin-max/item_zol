@@ -66,7 +66,7 @@ define([
             let next = null;
 
             $.ajax({
-                url: 'http://localhost/2004/Item_zol/php/listdata.php',
+                url: 'http://10.31.163.30/2004/Item_zol/php/listdata.php',
                 dataType: 'json'
             }).done(function(data) {
                 str = '';
@@ -115,7 +115,7 @@ define([
                 callback: function(api) {
 
                     $.ajax({
-                        url: 'http://localhost/2004/Item_zol/php/listdata.php',
+                        url: 'http://10.31.163.30/2004/Item_zol/php/listdata.php',
                         data: { //将获取的页码给后端
                             page: api.getCurrent()
                         },

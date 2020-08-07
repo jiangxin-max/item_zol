@@ -17,7 +17,7 @@ define([
                     $(this).siblings('p').hide();
                     $.ajax({
                         type: 'post',
-                        url: 'http://localhost/2004/Item_zol/php/registry.php',
+                        url: 'http://10.31.163.30/2004/Item_zol/php/registry.php',
                         dataType: 'json',
                         data: {
                             tel: this.value

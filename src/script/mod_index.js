@@ -82,7 +82,7 @@ define([
             /* ---------------------------------渲染首页数据----------------------------------- */
             const $oUl = $('.category-content-list')
             $.ajax({
-                url: 'http://localhost/2004/Item_zol/php/interface-index.php'
+                url: 'http://10.31.163.30/2004/Item_zol/php/interface-index.php'
             }).done(function(data) {
                 /* 获取数据，但是数据是数组对象形式的字符串，转换一下 */
                 var data = JSON.parse(data);

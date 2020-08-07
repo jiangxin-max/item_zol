@@ -7,7 +7,7 @@ define([
             $('#submit').on('click', function() {
                 $.ajax({
                     type: 'post',
-                    url: 'http://localhost/2004/Item_zol/php/login.php',
+                    url: 'http://10.31.163.30/2004/Item_zol/php/login.php',
                     data: {
                         tel: $('#username-input').val(),
                         pass: hex_sha1($('#password-input').val())
@@ -15,7 +15,7 @@ define([
                 }).done(function(data) {
                     console.log(data);
                     if (data) {
-                        location.href = "Home.html";
+                        location.href = "index.html";
                         localStorage.setItem('username', $('#username-input').val());
                     } else {
                         $('#password-input').val('');
