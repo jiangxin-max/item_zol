@@ -13,7 +13,7 @@ define([
                         pass: hex_sha1($('#password-input').val())
                     }
                 }).done(function(data) {
-                    console.log(data);
+
                     if (data) {
                         location.href = "index.html";
                         localStorage.setItem('username', $('#username-input').val());
